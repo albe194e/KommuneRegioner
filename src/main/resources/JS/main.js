@@ -39,7 +39,6 @@ async function kommuneActionFetch() {
     kommuneList = await fetchSomething(kommuneUrl)
     console.log(kommuneList)
 }
-
 async function kommuneFromDatabaseFetch() {
     kommuneList = await fetchSomething(kommuneFromDatabase)
     console.log(kommuneList)
@@ -109,9 +108,10 @@ function saveKommuner() {
 
 function addKommunerToTable() {
 
-    if (kommuneList.length > 0) {
+    if (kommuneList.length > 0){
         kommuneList.forEach(addTotable)
-    } else {
+    }
+    else{
         kommuneList = kommuneFromDatabaseFetch()
         console.log(kommuneList)
         kommuneList.forEach(addTotable)
@@ -181,11 +181,11 @@ async function insertKommuneFromApi() {
 
     await fetch(kommuneInsert, insertReq).catch((error) => console.log(error));
 }
-
-async function getFromApi() {
+async function getFromApi(){
     return await fetchSomething(kommuneUrl + "/" + input.value)
 
 }
+
 
 
 const input = document.getElementById('inputKommune')
