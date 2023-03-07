@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="../static/main.css">
+
+</head>
+<body>
+
+<button id="btn1">Klick for at hente regioner</button>
+<select id="regionDD"></select>
+
+<button id="btn2">Klick for at gemme regioner i Database</button>
+
+<hr>
+
+<button id="btn3">Klick for at gemme kommuner i Database</button>
+
+<button id="btn4">Klick for at vise alle kommuner</button>
+
+<br>
+
+<hr>
+
+<h2>Tilføj kommune fra api</h2>
+<input type="text" id="inputKommune">
+<button id="btn5">Klick for at tilføje kommune</button>
+
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th>Navn</th>
+            <th>Kode</th>
+            <th>href</th>
+            <th>Region</th>
+            <th>Billed</th>
+        </tr>
+        </thead>
+        <tbody id="kommuner">
+
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+<script src="../JS/main.js"></script>
+
+</html>
